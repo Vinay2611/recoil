@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /recoil/admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RedirectMatch 301 ^/admin /login.php
+
